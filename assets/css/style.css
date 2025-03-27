@@ -1,297 +1,189 @@
-/* ✅ استيراد خط Karla من Google Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-/* ✅ ضبط إعدادات الصفحة العامة */
+
 * {
     margin: 0;
-    /* إزالة الهوامش */
     padding: 0;
-    /* إزالة التباعد الداخلي */
     box-sizing: border-box;
-    /* ضبط نموذج الصندوق */
     font-family: "Karla", sans-serif;
-    /* استخدام خط Karla */
 }
 
-/* ✅ ضبط الإدخالات والأزرار */
+
 input,
 button {
     border: 0;
-    /* إزالة الحدود */
     outline: 0;
-    /* إزالة الإطار عند التركيز */
     border-radius: 4px;
-    /* تدوير الحواف */
 }
 
-/* ✅ تنسيق النصوص داخل placeholder */
+
 ::placeholder {
     color: #37454d;
-    /* لون placeholder */
 }
 
-/* ✅ تنسيق القسم الأساسي لنموذج تسجيل الدخول والتسجيل */
+
 #auth {
     max-width: 100vw;
-    /* عرض الحاوية بكامل الشاشة */
     min-height: 100vh;
-    /* ارتفاع الحاوية بكامل الشاشة */
     background-image: url("./../images/bg.png");
-    /* تعيين صورة الخلفية */
     background-position: center;
-    /* ضبط موضع الخلفية */
     background-size: cover;
-    /* جعل الخلفية تغطي كامل العنصر */
     background-repeat: no-repeat;
-    /* عدم تكرار الخلفية */
     display: flex;
-    /* استخدام flexbox */
     align-items: center;
-    /* توسيط العناصر عموديًا */
     justify-content: space-around;
-    /* توزيع العناصر */
 }
 
-/* ✅ ضبط تنسيق نموذج المصادقة */
+
 #auth .auth-form {
     width: 500px;
-    /* تحديد عرض النموذج */
     background-color: #fff;
-    /* لون الخلفية */
     border-radius: 18px;
-    /* تدوير الزوايا */
     padding: 35px;
-    /* تباعد داخلي */
 }
 
-/* ✅ تنسيق عنوان النموذج */
 #auth .auth-form .form-title {
     h3 {
         font-size: 38px;
-        /* حجم الخط */
         line-height: 50px;
-        /* ارتفاع السطر */
     }
 
     p {
         font-size: 14px;
-        /* حجم الخط */
         color: #37454d;
-        /* لون النص */
     }
 }
 
-/* ✅ تنسيق النموذج */
 #auth .auth-form form {
     display: flex;
-    /* استخدام flexbox */
     flex-direction: column;
-    /* ترتيب العناصر عموديًا */
     gap: 24px;
-    /* المسافة بين العناصر */
     margin-top: 24px;
-    /* مسافة من الأعلى */
 }
 
-/* ✅ تنسيق النصوص داخل النموذج */
 #auth .auth-form form label,
 #auth .auth-form form span {
     color: #37454d;
-    /* لون النص */
     font-size: 14px;
-    /* حجم النص */
     font-weight: 600;
-    /* وزن الخط */
 }
 
-/* ✅ تنسيق الروابط داخل النموذج */
 #auth .auth-form form a {
     font-size: 14px;
-    /* حجم النص */
     color: #ff6f6b;
-    /* لون النص */
     text-decoration: none;
-    /* إزالة التسطير */
     font-weight: 500;
-    /* سمك الخط */
 }
 
-/* ✅ ترتيب الحقول بجانب بعضها */
 #auth .auth-form form .row-inputs {
     display: flex;
-    /* استخدام flexbox */
     gap: 8px;
-    /* المسافة بين الحقول */
 }
 
-/* ✅ تنسيق إدخالات البيانات */
 #auth .auth-form form .form-inputs {
     display: flex;
-    /* استخدام flexbox */
     flex-direction: column;
-    /* ترتيب العناصر عموديًا */
     gap: 16px;
-    /* المسافة بين العناصر */
 }
 
-/* ✅ تنسيق حاوية الإدخال */
 #auth .auth-form form .form-inputs .input-container {
     width: 100%;
-    /* جعل الحقل يأخذ العرض بالكامل */
     display: flex;
     flex-direction: column;
-    /* ترتيب المحتوى عموديًا */
     gap: 4px;
-    /* مسافة بين العناصر */
 }
 
-/* ✅ تنسيق الحقول النصية */
 #auth .auth-form form .form-inputs .input-container input {
     width: 100%;
-    /* جعل الإدخال يأخذ العرض بالكامل */
     height: 40px;
-    /* ضبط الارتفاع */
     padding-inline: 16px;
-    /* تباعد داخلي */
     border: 1px solid #9ba2a6;
-    /* لون الحدود */
 }
 
-/* ✅ تغيير لون الحد عند التركيز */
 #auth .auth-form form .form-inputs .input-container input:focus {
     border: 1px solid #276968;
-    /* تغيير لون الحد */
 }
 
-/* ✅ تنسيق صندوق التحقق (Checkbox) */
 input[type="checkbox"] {
     accent-color: #276968;
-    /* تغيير لون الصندوق */
 }
 
-/* ✅ تنسيق الحاوية الخاصة بالإجراءات (تذكرني - نسيت كلمة المرور) */
 #auth .auth-form form .actions-container {
     display: flex;
-    /* استخدام flexbox */
     align-items: center;
-    /* محاذاة العناصر عموديًا */
     justify-content: space-between;
-    /* توزيع العناصر */
 }
 
-/* ✅ ترتيب مربع الاختيار والنص */
 #auth .auth-form form .actions-container div {
     display: flex;
     align-items: center;
     gap: 8px;
-    /* المسافة بين العناصر */
 }
 
-/* ✅ تنسيق حاوية زر الإرسال */
 #auth .auth-form form .submit-container {
     width: 100%;
-    /* جعلها بعرض النموذج */
     text-align: center;
-    /* توسيط النص */
 }
 
-/* ✅ تنسيق زر تسجيل الدخول */
 #auth .auth-form form .submit-btn {
     width: 100%;
-    /* جعله يأخذ العرض بالكامل */
     height: 40px;
-    /* ضبط الارتفاع */
     background-color: #276968;
-    /* لون الخلفية */
     color: #fff;
-    /* لون النص */
     font-size: 16px;
-    /* حجم الخط */
     font-weight: 500;
-    /* سمك الخط */
     margin-bottom: 8px;
-    /* مسافة من الأسفل */
     cursor: pointer;
-    /* تغيير شكل المؤشر عند التحويل */
 }
 
-/* ✅ تغيير شفافية زر الإرسال عند تمرير الفأرة */
 #auth .auth-form form .submit-btn:hover {
     opacity: 0.8;
-    /* تقليل الشفافية */
 }
 
-/* ✅ تنسيق الروابط داخل زر الإرسال */
 #auth .auth-form form .submit-btn a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff;
     line-height: 40px;
-    /* محاذاة النص داخل الزر */
 }
 
-/* ✅ تنسيق أيقونات تسجيل الدخول عبر وسائل التواصل الاجتماعي */
 #auth .auth-form form .social-container {
     display: flex;
-    /* استخدام flexbox */
     justify-content: space-between;
-    /* توزيع العناصر */
 }
 
-/* ✅ تنسيق كل عنصر في الحاوية */
 #auth .auth-form form .social-container .item {
     width: 135px;
-    /* ضبط عرض العنصر */
     height: 40px;
-    /* ضبط الارتفاع */
     border: 1px solid #276968;
-    /* لون الحدود */
     border-radius: 4px;
-    /* تدوير الحواف */
     display: flex;
-    /* استخدام flexbox */
     align-items: center;
-    /* توسيط العنصر عموديًا */
     justify-content: center;
-    /* توسيط العنصر أفقيًا */
     cursor: pointer;
-    /* تغيير المؤشر */
 }
 
-/* ✅ تغيير لون الخلفية عند تمرير الفأرة */
 #auth .auth-form form .social-container .item:hover {
     background-color: #f0f0f0;
-    /* تغيير لون الخلفية */
 }
 
-/* ✅ تنسيق الأيقونات داخل الأزرار */
 #auth .auth-form form .social-container .item img {
     width: 20px;
-    /* ضبط عرض الصورة */
 }
 
-/* ✅ تنسيق إدخالات كود التحقق */
 #auth .auth-form form .form-inputs .verify-inputs {
     display: flex;
-    /* استخدام flexbox */
     flex-direction: row;
-    /* ترتيب العناصر أفقيًا */
     justify-content: center;
-    /* توسيط العناصر */
     align-items: center;
     gap: 12px;
-    /* المسافة بين المربعات */
 }
 
-/* ✅ ضبط تنسيق كل خانة في كود التحقق */
 #auth .auth-form form .form-inputs .verify-inputs input {
     width: 50px;
-    /* ضبط العرض */
     height: 50px;
-    /* ضبط الارتفاع */
     font-size: 20px;
-    /* ضبط حجم النص */
     font-weight: 600;
-    /* زيادة سمك الخط */
 }
